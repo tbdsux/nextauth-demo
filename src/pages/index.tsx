@@ -1,4 +1,4 @@
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 
 export default function OverviewPage() {
@@ -20,7 +20,9 @@ export default function OverviewPage() {
 
   return (
     <>
-      <p>Signed in as {userEmail}</p>
+      <p>
+        Signed in as {userEmail} | {session?.user.role}
+      </p>
       <button onClick={() => signOut()}>Sign Out</button>
       <img src="https://cdn.pixabay.com/photo/2017/08/11/19/36/vw-2632486_1280.png" />
     </>

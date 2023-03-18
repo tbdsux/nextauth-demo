@@ -2,6 +2,10 @@
 
 Learning NextAuth.js with OAuth authentication with Prisma adapter
 
+### Special feature
+
+- Added new field `role` for `User` model
+
 ### `.env`
 
 Structure your `.env` file like so
